@@ -1,11 +1,14 @@
-/* General Properties */
+/* General Properties #5eead4*/
 
 * {
     box-sizing: border-box;
 }
 
 :root {
-    --text-colour: aqua;
+    --text-colour: #082f49;
+    --sidebar-icons-colour: #075985;
+    --sidebar-colour: #bae6fd;
+    --hover-shadow-colour: #00a6ff;
 }
 
 html {
@@ -15,47 +18,74 @@ html {
 body {
     margin: 0px;
     min-height: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 3.5fr 1fr;
 }
 
 /* Sidebar */
 
 .sidebar {
     grid-row: 1 / 5;
+    background-color: var(--sidebar-colour);
+}
+
+.logo {
+    margin: 12px;
 }
 
 .logo svg {
     height: 32px;
-    fill: aqua;
+    fill: var(--sidebar-icons-colour);
     vertical-align: middle;
+    position: relative;
+    top: 2px;
 }
 
 .logo h1 {
     display: inline-block;
     margin: 0px;
     vertical-align: middle;
+    color: var(--text-colour);
+    font-size: 32px;
+    letter-spacing: 1px;
 }
 
 nav ul {
     list-style: none;
     padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .group1-links svg, .group2-links svg {
     height: 32px;
-    fill: var(--text-colour);
+    fill: var(--sidebar-icons-colour);
     vertical-align: middle;
 }
 
 .group1-links a, .group2-links a {
     text-decoration: none;
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--text-colour);
+    vertical-align: middle;
+}
+
+.group1-links a:hover, .group2-links a:hover {
+    text-shadow: 2px 2px 2px var(--hover-shadow-colour);
 }
 
 /* Header */
+
+.top-header, .bottom-header {
+    padding: 20px 12px 0px 12px;
+    background-color: #f8fdff;
+}
 
 .top-header {
     grid-column: 2 / -1;
@@ -63,15 +93,39 @@ nav ul {
     justify-content: space-between;
 }
 
+.top-header svg {
+    fill: var(--text-colour);
+}
+
+.top-header img {
+    border: 3px solid var(--text-colour);
+    border-radius: 100%;
+}
+
 .top-header svg, .top-header img {
     height: 32px;
     vertical-align: middle;
+}
+
+.search-bar input[type="search"] {
+    outline: none;
+    appearance: none;
+    height: 32px;
+    width: 380px;
+    border: 3px solid var(--text-colour);
+    border-radius: 14px;
+    font-size: 18.5px;
+}
+
+.search-bar input[type="search"]:focus {
+    box-shadow: 2px 2px 2px var(--hover-shadow-colour);
 }
 
 .user-info h2 {
     display: inline-block;
     margin: 0px;
     vertical-align: middle;
+    color: var(--text-colour);
 }
 
 .bottom-header {
@@ -85,16 +139,48 @@ nav ul {
     display: inline-block;
     margin: 0px;
     vertical-align: middle;
+    color: var(--text-colour);   
+}
+
+.user-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.user-buttons button {
+    height: 40px;
+    width: 100px;
+    border: 3px solid var(--text-colour);
+    border-radius: 20px;
+    color: var(--text-colour);
+    background-color: var(--sidebar-colour);
+    cursor: pointer;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+.user-buttons button:hover {
+    box-shadow: 2px 2px 2px var(--sidebar-icons-colour);
+}
+
+.intro h1 span {
+    font-size: 22px;
+    display: block;
 }
 
 .intro img {
     height: 64px;
     vertical-align: middle;
+    border: 4px solid var(--text-colour);
+    border-radius: 100%;
 }
 
+/* Projects, Announcements & Trending Sections*/
+
 .projects {
+    padding: 0px 12px 0px 12px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     grid-auto-rows: min-content;
 }
 
