@@ -9,4 +9,4 @@ Resources:
 * [Frankenstein icon created by Freepik - Flaticon](https://www.flaticon.com/free-icons/frankenstein)
 * [Summertime icon created by Freepik - Flaticon](https://www.flaticon.com/free-icons/summertime)
 
-Live Demo :point_left: (to be added)
+[Live Demo](https://anabilhoque.github.io/Admin-Dashboard/) :point_left:
