@@ -5,10 +5,10 @@
 }
 
 :root {
-    --text-colour: #082f49;
-    --sidebar-icons-colour: #075985;
-    --sidebar-colour: #bae6fd;
-    --hover-shadow-colour: #00a6ff;
+    --text-color: #082f49;
+    --sidebar-icons-color: #075985;
+    --sidebar-color: #bae6fd;
+    --hover-shadow-color: #00a6ff;
     --body-background-color: #f8fdff;
 }
 
@@ -32,7 +32,7 @@ body {
 
 .sidebar {
     grid-row: 1 / 4;
-    background-color: var(--sidebar-colour);
+    background-color: var(--sidebar-color);
 }
 
 .logo {
@@ -41,7 +41,7 @@ body {
 
 .logo svg {
     height: 32px;
-    fill: var(--sidebar-icons-colour);
+    fill: var(--sidebar-icons-color);
     vertical-align: middle;
     position: relative;
     top: 2px;
@@ -51,7 +51,7 @@ body {
     display: inline-block;
     margin: 0px;
     vertical-align: middle;
-    color: var(--text-colour);
+    color: var(--text-color);
     font-size: 32px;
     letter-spacing: 1px;
 }
@@ -66,14 +66,14 @@ nav ul {
 
 .group1-links svg, .group2-links svg {
     height: 32px;
-    fill: var(--sidebar-icons-colour);
+    fill: var(--sidebar-icons-color);
     vertical-align: middle;
 }
 
 .group1-links a, .group2-links a {
     font-size: 26px;
     font-weight: bold;
-    color: var(--text-colour);
+    color: var(--text-color);
     vertical-align: middle;
     text-decoration: none;
     display: inline-block;
@@ -87,7 +87,7 @@ nav ul {
     left: 0;
     width: 100%;
     height: 0.1em;
-    background-color: var(--text-colour);
+    background-color: var(--text-color);
     opacity: 1;
 	transform: scale(0);
 	transform-origin: center;
@@ -95,7 +95,7 @@ nav ul {
 }
 
 .group1-links a:hover, .group2-links a:hover {
-    text-shadow: 2px 2px 2px var(--hover-shadow-colour);
+    text-shadow: 2px 2px 2px var(--hover-shadow-color);
 }
 
 .group1-links a:hover::after, .group2-links a:hover::after, .group1-links a:focus::after, .group2-links a:focus::after {
@@ -116,11 +116,11 @@ nav ul {
 }
 
 .top-header svg {
-    fill: var(--text-colour);
+    fill: var(--text-color);
 }
 
 .top-header img {
-    border: 3px solid var(--text-colour);
+    border: 3px solid var(--text-color);
     border-radius: 100%;
 }
 
@@ -134,20 +134,20 @@ nav ul {
     appearance: none;
     height: 32px;
     width: 380px;
-    border: 3px solid var(--text-colour);
+    border: 3px solid var(--text-color);
     border-radius: 14px;
     font-size: 18.5px;
 }
 
 .search-bar input[type="search"]:focus {
-    box-shadow: 2px 2px 2px 0px var(--hover-shadow-colour);
+    box-shadow: 2px 2px 2px 0px var(--hover-shadow-color);
 }
 
 .user-info h2 {
     display: inline-block;
     margin: 0px;
     vertical-align: middle;
-    color: var(--text-colour);
+    color: var(--text-color);
 }
 
 .bottom-header {
@@ -166,7 +166,7 @@ nav ul {
     display: inline-block;
     margin: 0px;
     vertical-align: middle;
-    color: var(--text-colour);   
+    color: var(--text-color);   
 }
 
 .user-buttons {
@@ -177,17 +177,17 @@ nav ul {
 .user-buttons button {
     height: 40px;
     width: 100px;
-    border: 3px solid var(--text-colour);
+    border: 3px solid var(--text-color);
     border-radius: 20px;
-    color: var(--text-colour);
-    background-color: var(--sidebar-colour);
+    color: var(--text-color);
+    background-color: var(--sidebar-color);
     cursor: pointer;
     font-size: medium;
     font-weight: bolder;
 }
 
 .user-buttons button:hover {
-    box-shadow: 2px 2px 2px 0px var(--sidebar-icons-colour);
+    box-shadow: 2px 2px 2px 0px var(--sidebar-icons-color);
 }
 
 .intro h1 span {
@@ -198,14 +198,14 @@ nav ul {
 .intro img {
     height: 64px;
     vertical-align: middle;
-    border: 4px solid var(--text-colour);
+    border: 4px solid var(--text-color);
     border-radius: 100%;
 }
 
-/* Main Content: Projects, Announcements, Trending Sections, Footer */
+/* Main: Projects, Announcements, Trending Sections, Footer */
 
 .main-content {
-    box-shadow: inset 0 0 8px var(--text-colour);
+    box-shadow: inset 0 0 8px var(--text-color);
 }
 
 .main-content {
@@ -227,16 +227,16 @@ nav ul {
 .projects h1 {
     grid-column: 1 / -1;
     margin: 0px;
-    color: var(--text-colour);
+    color: var(--text-color);
 }
 
 .projects > div {
-    border: 3px solid var(--text-colour);
+    border: 3px solid var(--text-color);
     border-radius: 12px;
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: auto 4fr 1fr auto;
-    box-shadow: 3px 3px 2px 0.5px var(--sidebar-colour);
+    box-shadow: 3px 3px 2px 0.5px var(--sidebar-color);
 }
 
 .colour-block {
@@ -246,13 +246,13 @@ nav ul {
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 8px;
     width: 20px;
-    background: linear-gradient(var(--text-colour), var(--hover-shadow-colour));
+    background: linear-gradient(var(--text-color), var(--hover-shadow-color));
 }
 
 .projects h2 {
     grid-column: 2 / -1;
     justify-self: center;
-    color: var(--text-colour);
+    color: var(--text-color);
     margin: 2px;
 }
 
@@ -263,7 +263,7 @@ nav ul {
     width: auto;
     border: 3px solid black;
     border-radius: 22px;
-    box-shadow: 2px 2px 5px 0px var(--hover-shadow-colour);
+    box-shadow: 2px 2px 5px 0px var(--hover-shadow-color);
     margin: 10px 0px;
 }
 
@@ -273,7 +273,7 @@ nav ul {
     grid-column: 2 / -1;
     text-align: center;
     font-weight: 500;
-    color: var(--text-colour);
+    color: var(--text-color);
     margin: 0px;
 }
 
@@ -291,7 +291,7 @@ nav ul {
 }
 
 .projects svg:hover {
-    fill: var(--sidebar-icons-colour);
+    fill: var(--sidebar-icons-color);
 }
 
 .flex-icons {
@@ -307,14 +307,14 @@ nav ul {
 .announcements h1 {
     margin: 0px 12px;
     padding: 12px 0px;
-    color: var(--text-colour);
+    color: var(--text-color);
 }
 
 .announcements-content {
     margin: 0px 12px;
-    border: 3px solid var(--text-colour);
+    border: 3px solid var(--text-color);
     border-radius: 12px;
-    box-shadow: 3px 3px 2px 0.5px var(--sidebar-colour);
+    box-shadow: 3px 3px 2px 0.5px var(--sidebar-color);
 }
 
 .announcements-content > div {
@@ -326,7 +326,7 @@ nav ul {
 
 .announcements-content div h2 {
     margin: 1px 0px;
-    color: var(--text-colour);
+    color: var(--text-color);
 }
 
 .announcements-content div p {
@@ -337,7 +337,7 @@ nav ul {
 .announcements-content > div:nth-child(1)::after, .announcements-content > div:nth-child(2)::after {
     content: "";
     width: 95%;
-    border: 2px dashed var(--sidebar-icons-colour);
+    border: 2px dashed var(--sidebar-icons-color);
     border-radius: 12px;
 }
 
@@ -346,14 +346,14 @@ nav ul {
 .trending h1 {
     margin: 0px 12px;
     padding: 12px 0px;
-    color: var(--text-colour);
+    color: var(--text-color);
 }
 
 .trending-content {
     margin: 0px 12px;
-    border: 3px solid var(--text-colour);
+    border: 3px solid var(--text-color);
     border-radius: 12px;
-    box-shadow: 3px 3px 2px 0.5px var(--sidebar-colour);
+    box-shadow: 3px 3px 2px 0.5px var(--sidebar-color);
     display: grid;
     grid-template-rows: repeat(4, auto);
     align-items: center;
@@ -377,7 +377,7 @@ nav ul {
 
 .trending-content > div > div h3, .trending-content > div > div p {
     margin: 0px;
-    color: var(--text-colour);
+    color: var(--text-color);
 }
 
 .trending-content > div > div p {
@@ -389,7 +389,7 @@ nav ul {
 .trending img {
     height: 42px;
     width: auto;
-    border: 3px solid var(--text-colour);
+    border: 3px solid var(--text-color);
     border-radius: 100%;
 }
 
@@ -397,7 +397,7 @@ nav ul {
     content: "";
     margin-top: 12px;
     grid-column: 1 / -1;
-    border: 2px dashed var(--sidebar-icons-colour);
+    border: 2px dashed var(--sidebar-icons-color);
     border-radius: 12px;
 }
 
@@ -407,5 +407,5 @@ nav ul {
 .footer p {
     font-size: 20px;
     text-align: center;
-    color: var(--text-colour);
+    color: var(--text-color);
 }
