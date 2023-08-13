@@ -89,8 +89,8 @@ nav ul {
     height: 0.1em;
     background-color: var(--text-color);
     opacity: 1;
-	transform: scale(0);
-	transform-origin: center;
+    transform: scale(0);
+    transform-origin: center;
     transition: opacity 300ms, transform 300ms;
 }
 
